@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --cor0: #F5D502;
+    --cor1: #C38A15;
+    --cor2: #5C562F;
+    --cor3: #02E2F5;
+    --cor4: #499EC9;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to right bottom, var(--cor4), var(--cor3));
+    }
+
+    section#login {
+        width: 80vw;
+        height: 60vh;
+    }
+
+    section#login > div#image {
+        float: left;
+        width: 32.5%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+        transform: translateX(-1px);
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 67.5%;
+    }
+
+    section#login > div#form > h1 {
+        margin-top: 20px
+    }
+
+    section#login > div#form > p {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    div.camp {
+        width: 80%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 10px; 
+    }
+
+    #password {
+        margin-bottom: 25px;
+    }
+
+    #ilogin, #ipassword {
+        width: 83%;
+        height: 38px;
+        float: right;
+        margin-top: 1px;
+        margin-right: 11px;
+    }
+
+    form#inputs > input[type=submit] {
+        width: 80%;
+    }
+
+    form#inputs > a.buttom {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body, html {
+        background-image: linear-gradient(to right bottom, var(--cor4), var(--cor3));
+    }
+
+    section#login {
+        width: 950px;
+    }
+
+    section#login > div#image {
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    section#login > div#form {
+        float: right;
+        width: 50%;
+    }
+
+    section#login > div#form > h1 {
+        margin-top: 50px
+    }
+
+    section#login > div#form > p {
+        margin-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    div.camp {
+        width: 80%;
+        height: 40px;
+        margin: auto;
+        margin-bottom: 10px; 
+    }
+    
+    #password {
+        margin-bottom: 65px;
+    }
+
+    #ilogin, #ipassword {
+        width: 83%;
+        height: 38px;
+        float: right;
+        margin-top: 1px;
+        margin-right: 11px;
+    }
+
+    form#inputs > input[type=submit] {
+        width: 80%;
+    }
+
+    form#inputs > a.buttom {
+        width: 80%;
+    }
+}
+
+

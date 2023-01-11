@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #F5D502;
+    --cor1: #C38A15;
+    --cor2: #5C562F;
+    --cor3: #02E2F5;
+    --cor4: #499EC9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body, html {
+    background-color: var(--cor4);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 520px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.692);
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+section#login > div#image {
+    background: var(--cor0) url(../pexels-lucia-barreiros-silva-12609166.jpg) no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+}
+
+section#login > div#form {
+    display: block;
+}
+
+section#login > div#form > h1 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+section#login > div#form > p {
+    text-align: center;
+    padding: 13px;
+    font-size: 0.9em;
+}
+
+div.camp {
+    background-color: var(--cor1);
+    display: block;
+    border-radius: 5px;
+    align-items: center;
+    margin: 5px;
+}
+
+form#inputs {
+    text-align: center;
+}
+
+#ilogin, #ipassword {
+    background-color: white;
+    font-size: 0.9em;
+    border: 0px;
+    height: 35px;
+    width: 76%;
+    padding-left: 38px;
+    border-radius: 5px;
+    transform: translateX(10px);
+}
+
+span, #ilogin, #ipassword {
+    margin-bottom: 1px;
+}
+
+span {
+    color: white;
+    margin-left: 7px;
+    transform: translateY(7px);
+}
+
+form#inputs > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 240px;
+    height: 40px;
+    background-color: var(--cor0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form#inputs > input[type=submit]:hover {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+}
+
+form#inputs > a.buttom {
+    display: block;
+    font-size: 1em;
+    width: 240px;
+    height: 40px;
+    background-color: var(--cor0);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    padding-top: 10px;
+}
+
+form#inputs > a.buttom:hover {
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+}
